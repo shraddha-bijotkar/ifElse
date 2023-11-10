@@ -1,0 +1,19 @@
+@import "src/colors" ;
+
+.new-users {
+    background-color: $ifelse-white;
+    padding: 20px;
+    height: 380px;
+    overflow: auto;
+}
+
+
+blockquote *:before{
+    content:''!important;
+ }
+.btn-more-0 {
+    background-color: $ifelse-dark-blue;
+}
+.progress-bar {
+    width: 30%;
+}

@@ -1,0 +1,34 @@
+@import "src/colors" ;
+
+.nabar {
+    background-color:  $ifelse-white;
+    margin-bottom: 0 !important;
+    padding: 0;
+}
+.navbar, .container-fluid {
+    padding: 0 !important;
+}
+
+.top-navigation {
+    position: sticky;
+    width: 100%;
+    top:0;
+}
+
+.common-button {
+    width: 80px;
+    color: $ifelse-white !important;
+    background-color: $ifelse-dark-blue;
+}
+
+fa-icon {
+    color: $ifelse-light-grey;
+}
+
+.form-control {
+    border: 0;
+}
+
+.search {
+    margin-left: 48px;
+}

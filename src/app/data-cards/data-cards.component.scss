@@ -1,0 +1,29 @@
+@import "src/colors" ;
+
+.cards-section {
+    margin-bottom: 24px;
+}
+.card-title {
+    color: $ifelse-dark-blue;
+}
+.card-title-0, .card-text-0 {
+    color: $ifelse-white;
+}
+.card-body-0 {
+    background-color: $ifelse-dark-blue;            
+}
+.card {
+    max-height: 400px;
+    max-width: 400px;
+}
+blockquote *:before{
+    content:''!important;
+ }
+ .card-body-0 p, .card-body-0 small {
+    color: $ifelse-white;
+    stroke: $ifelse-white;
+ }
+
+ .icon-grey {
+     color: $ifelse-light-grey;
+ }

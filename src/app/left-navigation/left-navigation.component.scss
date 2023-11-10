@@ -1,0 +1,17 @@
+@import "src/colors" ;
+
+.left-navigation {
+    position: fixed;
+    top: 0px;
+    width: 80px;
+    height: 100%;
+    margin-top: 80px;
+}
+
+fa-icon {
+    color: $ifelse-light-grey;
+}
+
+.addIcon {
+    color: $ifelse-dark-blue;
+}

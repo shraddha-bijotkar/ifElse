@@ -10,6 +10,8 @@ import { DataCardsComponent } from './data-cards/data-cards.component';
 import { NewUsersComponent } from './new-users/new-users.component';
 import { RecentOrdersComponent } from './recent-orders/recent-orders.component';
 import { PerformanceGraphsComponent } from './performance-graphs/performance-graphs.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PerformanceGraphsComponent } from './performance-graphs/performance-gra
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

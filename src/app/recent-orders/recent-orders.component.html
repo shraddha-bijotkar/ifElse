@@ -1,1 +1,42 @@
-<p>recent-orders works!</p>
+<div class="recent-orders">
+    <h5 class="mb-3">Recent Order</h5>
+<table class="table table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col" *ngFor="let order of recentOrderHeadings">{{order}}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let recentOrder of recentOrders; index as i">
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{recentOrder.name}}</td>
+            <td>{{recentOrder.product}}</td>
+            <td>{{recentOrder.delivery_date.slice(0,10)}}</td>
+            <td><button [ngClass]="findStatus(recentOrder.status)">{{recentOrder.status}}</button></td>
+            <td>{{recentOrder.tracking_no}}</td>
+            <td>{{recentOrder.shipping ? 'Yes' : 'No'}}</td>
+            <td><button class="btn" (click)="onClose(recentOrder)" data-toggle="modal" data-target="#closeModal"><fa-icon [icon]="faClose"> </fa-icon></button></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal fade" id="closeModal" tabindex="-1" aria-labelledby="closeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="closeModalLabel">Order summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {{closingOrder}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

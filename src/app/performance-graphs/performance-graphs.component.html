@@ -1,1 +1,22 @@
-<p>performance-graphs works!</p>
+<div class="charts">
+    <div class="row">
+            <div class="col-4 two-chart-container">
+                <h5 class="mb-2">Sales Statistics</h5>
+                <canvas id="LineChart" >{{ chart }}</canvas>
+            </div>
+            <div class="col-4 two-chart-container">
+                <h5 class="mb-2">Balance Oerview</h5>
+                <canvas  id="BarChart" >{{ chart }}</canvas>
+            </div>
+            <div class="col-3 pie-chart-container">
+                <h5 class="mb-2">Top Products</h5>
+                <div class="relative">
+                    <canvas class="doughnut"  id="DoughnutChart" >{{ chart }}</canvas>
+                <div class="absolute-center">
+                    <h3>50%</h3>
+                    <p>Popular items</p>
+                </div>
+                </div>
+            </div>
+    </div>
+</div>

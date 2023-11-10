@@ -1,0 +1,14 @@
+@import "src/colors" ;
+
+.recent-orders {
+    background-color: $ifelse-white;
+    padding: 20px;
+    height: 380px;
+    overflow: auto;
+}
+.btn-more-0 {
+    background-color: $ifelse-dark-blue;
+}
+.table {
+    text-align: center;
+}

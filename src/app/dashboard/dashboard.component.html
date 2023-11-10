@@ -1,1 +1,30 @@
-<p>dashboard works!</p>
+<div>
+    <app-top-navigation></app-top-navigation>
+</div>
+<div class="dashboard-left">
+    <div class="row">
+        <div class="col-1 bg-white position-fixed">
+            <app-left-navigation></app-left-navigation>
+        </div>
+            <div class="col">
+                <div class="dashboard-right">
+                    <div class="row">
+                        <app-data-cards></app-data-cards>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <app-recent-orders></app-recent-orders>
+                        </div>
+                        <div class="col-4">
+                            <app-new-users></app-new-users>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <app-performance-graphs></app-performance-graphs>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
